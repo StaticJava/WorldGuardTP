@@ -1,0 +1,31 @@
+name: WorldGuardTP
+main: me.staticjava.WorldGuardTP
+version: 1.0
+
+depends: [WorldGuard]
+
+commands:
+  tpdisable:
+    description: Disables TP for the specified region.
+    usage: |
+      /<command> [region]
+      Example: /<command> region123 - Disables TP in the region "region123".
+  tpenable:
+    description: Enables TP for the specified region.
+    usage: |
+      /<command> [region]
+      Example: /<command> region123 - Enables TP in the region "region123".
+  tpreload:
+    description: Reloads the WorldGuardTP configuration file.
+    usage: |
+      /<command>
+
+permissions:
+  wgtp.disable:
+    description: Allows user to use the tpdisable command.
+  wgtp.enable:
+    description: Allows user to use the tpenable command.
+  wgtp.reload:
+    description: Allows user to use the tpreload command.
+  wgtp.bypass:
+    description: Allows user to bypass TP even whilst disabled.
